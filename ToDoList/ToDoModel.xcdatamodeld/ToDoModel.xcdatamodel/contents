@@ -3,6 +3,7 @@
     <entity name="ToDo" representedClassName="ToDo" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="info" optional="YES" attributeType="String"/>
+        <attribute name="isChecked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
 </model>

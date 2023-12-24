@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ToDoListApp: App {
+    @StateObject private var dataController = DataController(name: "ToDoModel")
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
